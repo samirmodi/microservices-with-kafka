@@ -7,7 +7,12 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-@SpringBootApplication
+@SpringBootApplication(
+        scanBasePackages = {
+                "com.codewithme.amqp",
+                "com.codewithme.customer"
+        }
+)
 @EnableEurekaClient
 @EnableFeignClients(
         basePackages = "com.codewithme.clients"

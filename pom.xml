@@ -14,6 +14,8 @@
         <module>eureka-server</module>
         <module>clients</module>
         <module>notification</module>
+        <module>apigateway</module>
+        <module>messagequeue</module>
     </modules>
 
     <name>commonservices</name>
